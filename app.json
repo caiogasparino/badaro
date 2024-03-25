@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "BadaroChallenge",
+    "slug": "badaroChallenge",
+    "icon": "./assets/icon.png",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "backgroundColor": "#4B8E96",
+    "assetBundlePatterns": ["**/*"],
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#4B8E96"
+    },
+    "plugins": ["expo-font"],
+    "android": {
+      "package": "com.caiodeveloper.badaroChallenge"
+    },
+    "ios": {
+      "bundleIdentifier": "com.caiodeveloper.badaroChallenge"
+    }
+  }
+}
