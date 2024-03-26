@@ -1,5 +1,13 @@
 # App Badaró (Desafio Pratico Sênior)
 
+
+
+https://github.com/caiogasparino/badaro/assets/42823693/dafd0852-f629-4e28-aa44-f5caaa5c7a36
+
+
+https://github.com/caiogasparino/badaro/assets/42823693/e675727a-a931-4b4b-a8b6-f8bf215f7436
+
+
 ## Pré-Requisitos
 
 Para configurar e executar o Badaró, você precisará dos seguintes pré-requisitos instalados em sua máquina:
