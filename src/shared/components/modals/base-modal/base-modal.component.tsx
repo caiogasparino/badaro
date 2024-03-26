@@ -8,11 +8,13 @@ import {
 } from 'react'
 
 import {
+  BottomSheetBackdrop,
   BottomSheetModal,
   BottomSheetModalProps,
-  BottomSheetBackdrop,
 } from '@gorhom/bottom-sheet'
 
+import { BottomSheetDefaultBackdropProps } from '@gorhom/bottom-sheet/lib/typescript/components/bottomSheetBackdrop/types'
+import { JSX } from 'react/jsx-runtime'
 import { Container } from './base-modal.styles'
 
 export type BaseModalRef = {
@@ -43,8 +45,10 @@ const BaseModal = forwardRef<BaseModalRef, BaseModalProps>(
     }))
 
     const renderBackdrop = useCallback(
-      (props) => <BottomSheetBackdrop {...props} pressBehavior={'close'} />,
-      [],
+      (props: JSX.IntrinsicAttributes & BottomSheetDefaultBackdropProps) => (
+        <BottomSheetBackdrop {...props} pressBehavior={'close'} />
+      ),
+      []
     )
 
     return (
@@ -61,7 +65,7 @@ const BaseModal = forwardRef<BaseModalRef, BaseModalProps>(
         <Container>{children}</Container>
       </BottomSheetModal>
     )
-  },
+  }
 )
 
 export { BaseModal }

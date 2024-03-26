@@ -20,7 +20,7 @@ export const COLOR_LIGHT = {
 }
 export const COLOR_LIGHT_ORANGE = {
   BRAND: {
-    100: '##F47500',
+    100: '#F47500',
   },
   NEUTRAL: {
     100: '#9DA3B7',

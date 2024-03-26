@@ -1,7 +1,7 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
-import { TabRoutes } from './tab-routes'
 import { UnLoggedRoutes } from 'app/modules/un-logged/routes/un-logged.routes'
+import { TabRoutes } from './tab-routes'
 
 const { Navigator, Screen } = createNativeStackNavigator()
 

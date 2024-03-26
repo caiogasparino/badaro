@@ -1,7 +1,7 @@
 import { MAP_ICON_DEFAULT } from 'app/shared/assets/icons-svg'
 import { RFValue } from 'app/shared/libs/font-size/font-size'
 import { useTheme } from 'styled-components'
-import { CircularProgressBar } from '../radius-progress/radius.progress.component'
+import { CircularProgressBar } from '../radius-progress/radius-progress.component'
 import {
   Button,
   CardContainer,

@@ -5,6 +5,9 @@ export const data = {
   description: 'Badaró S750 Colab QP COPA...',
   code: '081924532',
   progress: 75,
-  avatarUri:
-    'https://gravatar.com/avatar/b1b0ab0c3d58695600ca90db348e88d9?s=400&d=robohash&r=x',
+  avatarUri: 'https://i.pravatar.cc/',
+}
+
+export const avatar = {
+  uri: 'https://i.pravatar.cc/302',
 }

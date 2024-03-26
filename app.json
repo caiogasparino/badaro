@@ -5,12 +5,12 @@
     "icon": "./assets/icon.png",
     "version": "1.0.0",
     "orientation": "portrait",
-    "backgroundColor": "#4B8E96",
+    "backgroundColor": "#000000",
     "assetBundlePatterns": ["**/*"],
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#4B8E96"
+      "backgroundColor": "#000000"
     },
     "plugins": ["expo-font"],
     "android": {

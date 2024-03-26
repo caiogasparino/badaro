@@ -6,6 +6,8 @@ export const Container = styled(BlurView)`
   align-items: center;
   justify-content: center;
   border-radius: 48px;
-  margin: 0 12px;
+  align-self: center;
+  position: absolute;
+  bottom: 0;
   background-color: ${({ theme }) => theme.COLORS.DARK[300]};
 `

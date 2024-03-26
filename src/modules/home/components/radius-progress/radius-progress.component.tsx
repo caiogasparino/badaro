@@ -4,7 +4,7 @@ import {
   AvatarContainer,
   AvatarImage,
   ContainerImage,
-} from './radius.progress.component.styles'
+} from './radius-progress.component.styles'
 interface CircularProgressBarProps {
   progress: number
   size: number

@@ -1,4 +1,5 @@
 import { TextDefault } from 'app/shared/components/texts/text-default/text-default.component'
+import { RFPercentage } from 'react-native-responsive-fontsize'
 import styled from 'styled-components/native'
 
 export const Container = styled.View`
@@ -13,6 +14,16 @@ export const ContainerCenter = styled.ScrollView`
   flex: 1;
   padding-vertical: ${({ theme }) => theme.METRICS.PADDING.x48}px;
 `
+
+export const ContainerCardImage = styled.ScrollView`
+  flex: 1;
+`
+export const ContainerFooter = styled.View`
+  flex: 1;
+  padding-vertical: ${({ theme }) => theme.METRICS.PADDING.x48}px;
+  margin-bottom: ${RFPercentage(20)}px;
+`
+
 export const Card = styled.View`
   height: 200px;
   z-index: 99999;
@@ -24,6 +35,6 @@ export const Card = styled.View`
 `
 
 export const Title = styled(TextDefault)`
-  margin-left: 20px;
+  margin-left: ${({ theme }) => theme.METRICS.PADDING.x24}px;
   font-size: ${({ theme }) => theme.METRICS.FONT_SIZE.x20}px;
 `
