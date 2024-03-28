@@ -5,7 +5,8 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 import { ThemeProvider } from 'styled-components'
 
-import { THEME_LIGHT } from '../design/themes/theme-light'
+import useThemeStore from 'app/modules/home/stores/useThemeStore'
+import { THEME_LIGHT, THEME_LIGHT_ORANGE } from '../design/themes/theme-light'
 import { queryClient } from '../libs/react-query/query-client'
 
 type AppProviderProps = {
@@ -13,10 +14,14 @@ type AppProviderProps = {
 }
 
 const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
+  const theme = useThemeStore((state) => state.theme)
+
+  const THEME = theme === 'THEME_LIGHT' ? THEME_LIGHT : THEME_LIGHT_ORANGE
+
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <SafeAreaProvider style={{ flex: 1 }}>
-        <ThemeProvider theme={THEME_LIGHT}>
+        <ThemeProvider theme={THEME}>
           <BottomSheetModalProvider>
             <QueryClientProvider client={queryClient}>
               {children}

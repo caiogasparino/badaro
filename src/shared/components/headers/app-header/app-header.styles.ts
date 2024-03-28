@@ -27,7 +27,10 @@ export const IconNotification = styled(Feather).attrs(({ theme }) => ({
   size: RFValue(22),
   color: theme.COLORS.BASE[100],
 }))``
+
 export const IconMenu = styled(Feather).attrs(({ theme }) => ({
   size: RFValue(24),
   color: theme.COLORS.BASE[100],
 }))``
+
+export const Button = styled.TouchableOpacity``

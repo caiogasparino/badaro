@@ -32,6 +32,7 @@ export const Card = styled.View`
   padding: ${({ theme }) => theme.METRICS.PADDING.x24}px;
   background-color: ${({ theme }) => theme.COLORS.BASE[50]};
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+  elevation: 10;
 `
 
 export const Title = styled(TextDefault)`

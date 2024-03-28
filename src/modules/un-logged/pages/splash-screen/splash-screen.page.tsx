@@ -11,6 +11,7 @@ import {
 
 import AppIconSvg from 'app/modules/un-logged/assets/svgs/app-icon.svg'
 
+import { BRAND_TEXT } from '../../constants/splash-data'
 import { Container, Content, TextOnboarding } from './splash-screen.styles'
 
 const SplashScreen: React.FC = () => {
@@ -45,10 +46,7 @@ const SplashScreen: React.FC = () => {
       </Content>
 
       <Content entering={FadeInLeft.delay(400).duration(400)}>
-        <TextOnboarding variant="H1">
-          Uma década criando experiências com inteligência e inovação para novos
-          futuros.
-        </TextOnboarding>
+        <TextOnboarding variant="H1">{BRAND_TEXT}</TextOnboarding>
       </Content>
     </Container>
   )

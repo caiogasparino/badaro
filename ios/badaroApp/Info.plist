@@ -43,7 +43,7 @@
 			<true />
 		</dict>
 		<key>RCTRootViewBackgroundColor</key>
-		<integer>4283141782</integer>
+		<integer>000000000</integer>
 		<key>UILaunchStoryboardName</key>
 		<string>SplashScreen</string>
 		<key>UIRequiredDeviceCapabilities</key>

@@ -4,7 +4,6 @@ import { styled } from 'styled-components/native'
 
 export const Container = styled.View`
   background-color: ${({ theme }) => theme.COLORS.BASE[50]};
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 16px;
   flex-direction: row;
   height: 120px;
@@ -13,6 +12,8 @@ export const Container = styled.View`
   align-items: center;
   margin-vertical: ${({ theme }) => theme.METRICS.PADDING.x20}px;
   margin-horizontal: ${({ theme }) => theme.METRICS.PADDING.x24}px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  elevation: 10;
 `
 
 export const ContainerDescription = styled.View`

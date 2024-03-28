@@ -1,0 +1,22 @@
+{
+  "themes": [
+    {
+      "id": 1,
+      "theme": "THEME_LIGHT"
+    }
+  ],
+  "messages_bot": [
+    {
+      "id": 1,
+      "text": "☺️ Como posso ajudar você? Estou pronta para cuidar do seu serviço de internet!",
+      "sender": "bot"
+    }
+  ],
+  "messages_user": [
+    {
+      "id": 1,
+      "text": "Estou com lentidão no download e dificuldade de navegação.",
+      "sender": "user"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const axiosInstance = axios.create({
-  baseURL: 'https://api.coincap.io/v2',
+  baseURL: 'http://localhost:3000/',
 })
 
 export function setDefaultToken(token: string | undefined) {
@@ -14,7 +14,7 @@ axiosInstance.interceptors.request.use(
   },
   async (error) => {
     return await Promise.reject(error)
-  },
+  }
 )
 
 axiosInstance.interceptors.response.use(
@@ -23,7 +23,7 @@ axiosInstance.interceptors.response.use(
   },
   async (error) => {
     return await Promise.reject(error)
-  },
+  }
 )
 
 export { axiosInstance }

@@ -5,7 +5,6 @@ import styled from 'styled-components/native'
 export const Container = styled.View`
   flex: 1;
   background-color: ${({ theme }) => theme.COLORS.BASE[50]};
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   height: 70px;
   border-radius: 34px;
   flex-direction: row;
@@ -14,6 +13,8 @@ export const Container = styled.View`
   padding-horizontal: ${RFPercentage(3)}px;
   margin-horizontal: ${RFPercentage(2)}px;
   margin-vertical: ${RFPercentage(4)}px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  elevation: 10;
 `
 export const ContainerLeft = styled.View`
   flex: 1;
