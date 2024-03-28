@@ -42,7 +42,8 @@ const CustomTabItem: React.FC<CustomTabItemProps> = ({
   const { COLORS } = useTheme()
 
   const scale = useSharedValue(0.5)
-  const rotate = useSharedValue(0) // Degrees
+  const rotate = useSharedValue(0)
+  const IconComponent = MAP_ICON_NAME[label]
 
   const animatedIconStyle = useAnimatedStyle(() => ({
     transform: [
@@ -50,8 +51,6 @@ const CustomTabItem: React.FC<CustomTabItemProps> = ({
       { rotate: `${interpolate(rotate.value, [0, 360], [0, 360])}deg` },
     ],
   }))
-
-  const IconComponent = MAP_ICON_NAME[label]
 
   useEffect(() => {
     if (isFocused) {
@@ -68,7 +67,7 @@ const CustomTabItem: React.FC<CustomTabItemProps> = ({
   }, [isFocused])
 
   return (
-    <Container activeOpacity={1} onPress={onPress} key={label}>
+    <Container activeOpacity={0.8} onPress={onPress} key={label}>
       <ContentTabItem
         style={[
           {
@@ -96,7 +95,6 @@ const CustomTabItem: React.FC<CustomTabItemProps> = ({
             color={isFocused ? COLORS.BRAND[100] : COLORS.NEUTRAL[100]}
           />
         )}
-
         {isFocused && <Label>{label}</Label>}
       </ContentTabItem>
     </Container>

@@ -54,7 +54,7 @@ const AppHeader: React.FC<AppHeaderProps> = ({ title, ...rest }) => {
     <Container intensity={15} style={{ height }}>
       {title && (
         <Button onPress={() => {}}>
-          <TitleHeader variant="H2">{title}</TitleHeader>{' '}
+          <TitleHeader variant="H2">{title}</TitleHeader>
         </Button>
       )}
       {rest.arrowLeft && (

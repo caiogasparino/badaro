@@ -15,9 +15,9 @@ const AppRoutes: React.FC = () => {
       }}
     >
       <Screen name="UnLoggedRoutes" component={UnLoggedRoutes} />
+      <Screen name="TabRoutes" component={TabRoutes} />
       <Screen name="Home" component={HomeRoutes} />
       <Screen name="Chat" component={ChatRoutes} />
-      <Screen name="TabRoutes" component={TabRoutes} />
     </Navigator>
   )
 }
