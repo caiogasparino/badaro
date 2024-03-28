@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query'
 import {
-  axiosClient,
   ParamsClientType,
+  axiosClient,
 } from 'app/shared/clients/axios/axios-client'
 
 type UseFetcherProps = {
@@ -15,3 +15,5 @@ export function useFetcher<R>({ url, params }: UseFetcherProps) {
     queryFn: () => axiosClient({ method: 'get', url, params }),
   })
 }
+
+export default useFetcher

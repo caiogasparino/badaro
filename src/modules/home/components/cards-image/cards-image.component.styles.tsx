@@ -5,13 +5,14 @@ import { styled } from 'styled-components/native'
 export const Container = styled.View`
   flex: 1;
   background-color: ${({ theme }) => theme.COLORS.BRAND[100]};
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 24px;
   flex-direction: row;
   height: 327px;
   align-items: center;
   margin-horizontal: ${({ theme }) => theme.METRICS.PADDING.x16}px;
   margin-vertical: ${({ theme }) => theme.METRICS.PADDING.x16}px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  elevation: 10;
 `
 
 export const ContainerDescription = styled.View`

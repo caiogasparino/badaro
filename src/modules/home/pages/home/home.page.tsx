@@ -1,12 +1,12 @@
 import { AppHeader } from 'app/shared/components/headers/app-header/app-header.component'
 
-import { CardComponent } from '../../components/cards-header/cards.component'
+import { CardComponent } from 'app/modules/home/components/cards-header/cards.component'
 
-import { CardImageText } from '../../components/cards-image-text/cards-image-text.component'
-import { CardImage } from '../../components/cards-image/cards-image.component'
-import { CardLine } from '../../components/cards-line/card-line.component'
-import { RadiusComponent } from '../../components/radius/radius.component'
-import { avatar, data } from './constants'
+import { CardImageText } from 'app/modules/home/components/cards-image-text/cards-image-text.component'
+import { CardImage } from 'app/modules/home/components/cards-image/cards-image.component'
+import { CardLine } from 'app/modules/home/components/cards-line/card-line.component'
+import { RadiusComponent } from 'app/modules/home/components/radius/radius.component'
+import { avatar, data } from 'app/modules/home/utils/constants'
 import {
   Container,
   ContainerCardImage,
@@ -22,7 +22,7 @@ const TITLE_SUB = 'Só para você, Roberta!'
 const Home: React.FC = () => {
   return (
     <Container>
-      <AppHeader />
+      <AppHeader menu logo message notification />
       <CardComponent data={data} />
       <ContainerCenter showsVerticalScrollIndicator={false}>
         <Title variant="H2">{TITLE}</Title>

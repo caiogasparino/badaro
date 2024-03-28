@@ -89,7 +89,7 @@ O diretório `Shared` contém elementos usados em todo o aplicativo:
 
 - **Design System**: Centralizado usando `styled-components`, permite um acesso uniforme e centralizado ao design system.
 
-- **Config**: Configurações gerais do aplicativo, como mapeamento de tab bars, lista pré-selecionada de criptomoedas e suas cores.
+- **Config**: Configurações gerais do aplicativo, como mapeamento de tab bars, lista pré-selecionada, Cards e suas cores.
 
 - **Hooks**: Hooks personalizados para chamadas de serviços via protocolos HTTP e WebSocket.
 
