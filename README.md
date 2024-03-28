@@ -1,12 +1,8 @@
 # App Badaró (Desafio Pratico Sênior)
 
+<https://github.com/caiogasparino/badaro/assets/42823693/dafd0852-f629-4e28-aa44-f5caaa5c7a36>
 
-
-https://github.com/caiogasparino/badaro/assets/42823693/dafd0852-f629-4e28-aa44-f5caaa5c7a36
-
-
-https://github.com/caiogasparino/badaro/assets/42823693/e675727a-a931-4b4b-a8b6-f8bf215f7436
-
+<https://github.com/caiogasparino/badaro/assets/42823693/e675727a-a931-4b4b-a8b6-f8bf215f7436>
 
 ## Pré-Requisitos
 
@@ -33,6 +29,7 @@ Para configurar e executar o Badaró, você precisará dos seguintes pré-requis
    ```
 
 3. Instale as dependências do projeto usando Yarn:
+
    ```bash
     yarn install
    ```
@@ -47,13 +44,19 @@ Após configurar seu ambiente, você pode iniciar o aplicativo usando um dos seg
 yarn android
 ```
 
-### Android
+### IOS
 
 ```bash
 yarn ios
 ```
 
-## Tecnologicas utilizadas:
+### JSON SERVER PARA SIMULAR CHAT
+
+```bash
+json-server --watch ./json/db.json
+```
+
+## Tecnologicas utilizadas
 
 - [Expo](https://expo.dev/) - Utilizado o expo bare workflow
 - [TypeScript](https://www.typescriptlang.org/)
